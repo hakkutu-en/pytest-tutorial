@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite errors="0" failures="1"
+        hostname="fnbuf5294517l" name="pytest" skipped="0" tests="4" time="0.064" timestamp="2021-04-10T13:35:14.383622">
+            <testcase classname="test_multiplication"
+                name="test_multiplication_11[1-11]"
+                time="0.001" />
+        <testcase classname="test_multiplication"
+            name="test_multiplication_11[2-22]"
+            time="0.001" />
+        <testcase classname="test_multiplication"
+            name="test_multiplication_11[3-35]"
+            time="0.002">
+                <failure message="assert (11 * 3) == 35">num = 3, output = 35
+
+                    @pytest.mark.parametrize('num, output', [(1,11), (2,22), (3,35), (4,44)])
+                    def test_multiplication_11(num, output):
+                    &gt;       assert 11 * num == output
+                    E       assert (11 * 3) == 35
+
+                    test_multiplication.py:5: AssertionError
+                </failure>
+        </testcase>
+        <testcase classname="test_multiplication"
+            name="test_multiplication_11[4-44]"
+            time="0.001" />
+    </testsuite>
+</testsuites>
